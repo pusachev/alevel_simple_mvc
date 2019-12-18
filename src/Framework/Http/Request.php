@@ -73,6 +73,11 @@ final class Request implements RequestInterface, RequestSpecificationInterface
         return null;
     }
 
+    public function getRequestUri() : string
+    {
+        return (string) $_SERVER['REQUEST_URI'];
+    }
+
     /**
      * @inheritDoc
      */

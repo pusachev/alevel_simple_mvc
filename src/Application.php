@@ -23,7 +23,7 @@ class Application
     {
         $this->router = new Router();
         $this->view   = new PhpView();
-        $this->request = Request::getInstance();
+        $this->request = new Request();
     }
 
     public function run()
